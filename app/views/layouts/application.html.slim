@@ -11,9 +11,9 @@ html
     meta name="turbolinks-cache-control" content="no-cache"
     title
       - if content_for?(:title)
-        = yield(:title) + " | sample_app"
+        = "#{yield(:title)} | Ruby on Rails Sample App"
       - else
-        | sample_app
+        | Ruby on Rails Sample App
     = csrf_meta_tags
     = action_cable_meta_tag
     = content_for?(:head) ? yield(:head) : ''
